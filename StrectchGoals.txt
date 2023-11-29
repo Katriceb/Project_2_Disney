@@ -1,0 +1,3 @@
+Strectch Goals
+
+The data that comes back are objects that will display, but if data is an array characters wont display.I wanted all the characters and Films to be displayed as well like my wire frame.
