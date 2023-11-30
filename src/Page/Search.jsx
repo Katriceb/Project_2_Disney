@@ -31,7 +31,7 @@ const getAllCharacters = async (searchterm)=>{
   return (
     <div className='Search'>
       <Form  getAllCharacters={ getAllCharacters}/>
-     <div>This is the search page</div>
+     <div><p>This is the search page</p></div>
      </div>
   )
 

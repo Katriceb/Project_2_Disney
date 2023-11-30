@@ -9,7 +9,7 @@
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #fff; /* White background */
+  background-color: lightblue; 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
 }
 
@@ -18,23 +18,24 @@
 }
 
 .read-the-docs {
-  color: #888;
+  color:black;
 }
 input {
   margin-top: 50px;
   padding: 5px;
-  font-size: 16px; /* Light gray border */
+  font-size: 20px; /* Light gray border */
   border-radius: 5px;
 }
 
 h2 {
-  background-color: rgb(228, 171, 153);
+  background-color: red;
 }
+
 
 .nav {
   display: flex;
   justify-content: space-evenly;
-  background-color: rgb(211, 74, 74);
+  background-color: orange;
 
   padding: 10px;
   font-size: 1em;
@@ -42,8 +43,8 @@ h2 {
 .nav a:link,
 .nav a:visited {
   text-decoration: none;
-  color: #fff;
+  color:red;
 }
 .nav a:hover {
-  color: bisque;
+  color:bisque;
 }
