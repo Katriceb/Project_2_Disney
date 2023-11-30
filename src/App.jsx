@@ -37,7 +37,7 @@ function App() {
   };
 
   useEffect(() => {
-    const movieArray = ["Olaf", "Mulan", "Winnie the Pooh","Snow White"];
+    const movieArray = ["Olaf", "Mulan", "Winnie the Pooh","Snow White","Pochontas","Tinker Bell"];
     
    
  getDisney(movieArray[Math.floor(Math.random() * movieArray.length)]); 
