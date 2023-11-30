@@ -1,28 +1,36 @@
 import React from 'react'
-function DisneyList({Disney }) {
+
+
+function DisneyList({disney }) {
     const loaded = () => {
         return (
             <>
+              <h2>{disney.name}</h2>
+                <img src={disney.imageUrl} alt={disney.name} />
                 
-                <h2><strong>{Disney.tvShows}</strong></h2>
-                <img src={Disney.imageUrl} alt={Disney.name} />
-                <h2>{Disney.Year}</h2>
-                <h3>films</h3>
-                {Disney.films &&
-                Disney.films.map (film => {
+               {disney.tvShows && disney.tvShows.map (show => {
+                
+                <h2><strong>{show}</strong></h2>
+               }) }
+                {disney.films &&
+                disney.films.map (film => {
                     
                     <h4>{film}</h4>
                 })  }
             </>
         )
     }
-
+   
+    
     const loading = () => {
-        return <h5>No Movie to Display</h5>
+        return <ls><h4><em>"Olaf" "Mulan" "Snow White" "Winnie The Pooh" "Tinker Bell"</em></h4></ls>
+       
+ 
+       
         
     }
     //The component must return some JSX
-    return Disney ? loaded() : loading();
+    return disney ? loaded() : loading();
            
 }
 export default DisneyList;

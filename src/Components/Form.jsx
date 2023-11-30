@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 //import React from "react";
 //import { useParams } from "react-router-dom";
 //import Results from './results';
-function Form(props) { 
+function Form({disneySearch}) { 
     // add state to hold the data of the form
     const [formData, setFormData] = useState({
         searchterm: "",
@@ -20,7 +20,7 @@ function Form(props) {
         
 
        
-        props.disneysearch(formData.searchterm);
+    disneySearch(formData.searchterm);
     }
     
     return (
@@ -36,10 +36,10 @@ function Form(props) {
 
             </form>
             <br/>
-            <p>Search for all <strong>Disney </strong><em>Characters' Movies</em> </p>
+            <p>Search for all <strong>Disney Characters' </strong></p>
             <br/>
 
-            <button><strong>Search Disney Characters Movies'</strong></button>
+           
         </div>
     )
 }

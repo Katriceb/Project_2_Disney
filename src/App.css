@@ -40,3 +40,46 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.nav {
+  display:flex;
+  justify-content:space-evenly;
+  background-color: rgb(136, 255, 0);
+
+  padding: 10px;
+  font-size: 1em;
+}
+
+.body {
+  background-color: #a52828; /* Light gray background */
+}
+
+/* Styling the main container */
+.App {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff; /* White background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+
+
+
+
+input {
+  padding: 5px;
+  font-size: 16px;
+  border: 3px solid blue; /* Light gray border */
+  border-radius: 5px;
+}
+
+h2{
+  background-color: yellow;
+}
+
+div {
+  background:url() ;
+}
+

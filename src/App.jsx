@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 // IMPORT OUR COMPONENTS
+import{Route,Routes} from "react-router-dom";
 import Form from "./Components/Form";
 import DisneyList from "./Components/DisneyList";
 import Nav from "./Components/Nav"
@@ -13,7 +14,7 @@ import Search from"./Page/Search";
 
 function App() {
   
-  const [Disney, setDisney] = useState([]);
+  const [disney, setDisney] = useState([]);
 
 
 
@@ -29,13 +30,14 @@ function App() {
       const data = await response.json();
       console.log(data);
       setDisney(data.data);
+      console.log(disney);
     } catch (e) {
       console.error(e);
     }
   };
 
   useEffect(() => {
-    const movieArray = ["Olaf", "Stitch", "Elsa"];
+    const movieArray = ["Olaf", "Mulan", "Winnie the Pooh","Snow White"];
     
    
  getDisney(movieArray[Math.floor(Math.random() * movieArray.length)]); 
@@ -45,11 +47,20 @@ function App() {
   
   return (
     <div className="App">
-          <Form disneysearch={getDisney} />
+      <Nav/>
+          <Form disneySearch={getDisney} />
+      <br/>
     
-      <DisneyList Disney={Disney} />
-    </div>
+      <DisneyList disney={disney} />
+
+      <Routes>
+       <Route path='/' element={<Home/>}/>
+       <Route path='/about' element={<About/>}/>
+       <Route path='/disneylist'element={<DisneyList/>}/>
+      </Routes>
+      
+      </div>
   );
-}
+  }
 
 export default App;
