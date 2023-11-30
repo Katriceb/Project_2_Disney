@@ -1,0 +1,21 @@
+steps
+
+1.setup code for getting Disney Characters and Movies
+2.Disney Doesnt required an API,Completed the wireFrame
+3.Frequent Commit to GitHub
+4.Use the useEffect hook ,React Library , Built in HTML,CSS, JavaScript
+5.Diplay the data and add Css stlying 
+6.Host on Netlify
+
+
+
+1.   Initial project creation.
+2.   Initial layout of components
+3.   Fetch is working and you can console.log data
+4.   useEffect is working
+5.   Initial display of data on browser after fetch
+6.   Styling
+
+   A README.md file with explanations of the technologies used, the approach taken, a link to your live site, installation instructions, unsolved problems, etc.
+
+
