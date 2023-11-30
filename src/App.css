@@ -44,7 +44,12 @@ h2 {
 .nav a:visited {
   text-decoration: none;
   color:red;
+  
 }
 .nav a:hover {
   color:bisque;
+}
+p {
+  font-style: italic;
+  color: blue;
 }
